@@ -195,7 +195,7 @@ class AuthScreen extends StatelessWidget {
           defaultTextFormField(
             label: 'Password',
             controller: password,
-            obscure: false,
+            obscure: true,
             textInputType: TextInputType.text,
             validate: (value) {
               if (value == null || value.isEmpty) {
@@ -312,7 +312,7 @@ class AuthScreen extends StatelessWidget {
             label: 'Password',
             controller: password,
             //todo
-            obscure: false,
+            obscure: true,
             validate: (value) {
               if (value == null || value.isEmpty) {
                 return "password should not be empty";
@@ -332,7 +332,7 @@ class AuthScreen extends StatelessWidget {
           defaultTextFormField(
             label: 'Confirm Password',
             controller: confirmPassword,
-            obscure: false,
+            obscure: true,
             validate: (value) {
               if (value == null || value != password.text) {
                 return "password doesn't match";
